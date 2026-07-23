@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wilson Deng | Cybersecurity Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(180deg, #020617, #071a35, #020617);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Snow effect */
+        .snow {
+            position: fixed;
+            top: -10px;
+            color: white;
+            opacity: 0.7;
+            animation: snowfall linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes snowfall {
+            from {
+                transform: translateY(-10vh);
+            }
+
+            to {
+                transform: translateY(110vh);
+            }
+        }
+
+        /* Navigation */
+
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            text-align: center;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+
+        /* Sections */
+
+        section {
+            min-height: 100vh;
+            padding: 120px 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 55px;
+            color: #38bdf8;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 30px;
+            color: #7dd3fc;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #dbeafe;
+            max-width: 850px;
+        }
+
+
+        /* Cards */
+
+        .card {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 15px 0;
+            max-width: 900px;
+            box-shadow: 0 0 25px rgba(14, 165, 233, 0.1);
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-top: 15px;
+            color: #dbeafe;
+        }
+
+        li {
+            margin: 8px;
+        }
+
+
+        /* Links */
+
+        .links a {
+            color: #38bdf8;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* Contact Form */
+
+        form {
+            max-width: 600px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #0f172a;
+            border: 1px solid #1e40af;
+            border-radius: 8px;
+            color: white;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background: #0369a1;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0284c7;
+        }
+
+
+        /* Scroll Animation */
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s ease;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #94a3b8;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Snowflakes -->
+
+    <div class="snow" style="left:10%; animation-duration:10s;">❄</div>
+    <div class="snow" style="left:25%; animation-duration:14s;">❄</div>
+    <div class="snow" style="left:40%; animation-duration:12s;">❄</div>
+    <div class="snow" style="left:60%; animation-duration:16s;">❄</div>
+    <div class="snow" style="left:80%; animation-duration:11s;">❄</div>
+
+
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+
+    <!-- About -->
+
+    <section id="about" class="hidden">
+
+        <h1>Wilson Deng</h1>
+
+        <h2>About Me</h2>
+
+        <p>
+            Hi, I'm Wilson Deng. I'm a student with a growing passion for technology and cybersecurity.
+            I enjoy learning how computers work, solving technical problems, and building projects that challenge me to
+            think creatively.
+            Outside of school, you'll usually find me gaming, writing code, drinking matcha, enjoying the winter, or
+            spending time with friends.
+        </p>
+
+        <br>
+
+        <p>
+            I am pursuing cybersecurity because I want to understand how digital systems can be protected from threats.
+            My goal is to help strengthen defensive security systems and create safer technology for the future.
+        </p>
+
+
+        <br>
+
+        <div class="links">
+
+            <a href="YOUR_RESUME_LINK" target="_blank">Resume</a>
+
+            <a href="mailto:wilsonwilsondeng2009@gmail.com">
+                Email
+            </a>
+
+            <a href="YOUR_LINKEDIN_LINK" target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- Education -->
+
+    <section id="education" class="hidden">
+
+        <h2>Education</h2>
+
+
+        <div class="card">
+
+            <h3>NYC Lab High School for Collaborative Studies</h3>
+
+            <p>
+                GPA: 95%
+            </p>
+
+
+            <ul>
+                <li>AP Computer Science Principles</li>
+                <li>AP Computer Science A</li>
+                <li>AP Calculus</li>
+                <li>Python and Robotics coursework</li>
+            </ul>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h3>Baruch College College Now Program</h3>
+
+            <p>
+                Completed two college-level courses:
+            </p>
+
+            <ul>
+                <li>Personal Finance Management</li>
+                <li>Programming and Computational</li>
+            </ul>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h3>New York University Tandon School of Engineering</h3>
+
+            <p>
+                CS4CS Program participant focused on cybersecurity, programming, and technology.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <!-- Projects -->
+
+    <section id="projects" class="hidden">
+
+        <h2>Projects</h2>
+
+
+        <div class="card">
+
+            <h3>NASA Dream With Us Challenge</h3>
+
+            <p>
+                Participated in a STEM design competition focused on creating solutions for aviation challenges.
+                Worked on designing a drone system to detect and remove spotted lanternflies while evaluating safety,
+                cost, and component trade-offs.
+            </p>
+
+        </div>
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+    <!-- Contact -->
+
+    <section id="contact" class="hidden">
+
+        <h2>Contact Me</h2>
+
+
+        <p>
+            Feel free to reach out for collaboration, projects, or opportunities.
+        </p>
+
+
+        <br>
+
+
+        <form>
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Email">
+
+            <input type="text" placeholder="Email Subject">
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <button>
+                Send Message
+            </button>
+
+        </form>
+
+
+    </section>
+
+
+
+
+    <footer>
+
+        © 2026 Wilson Deng
+
+    </footer>
+
+
+
+
+
+    <script>
+
+        const sections = document.querySelectorAll(".hidden");
+
+
+        const observer = new IntersectionObserver(entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("show");
+
+                }
+
+            });
+
+        });
+
+
+        sections.forEach(section => {
+
+            observer.observe(section);
+
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
